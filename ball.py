@@ -13,6 +13,7 @@ class Ball():
     def ball_movement(self):
         self.x += self.ball_vel_x
         self.y += self.ball_vel_y
+        
         if self.y <=0 or self.y >= 730:
             self.ball_vel_y *= -1
         if self.x <=0 or self.x >= 730:
